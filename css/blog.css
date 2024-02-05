@@ -1,0 +1,240 @@
+.blogBackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-image: url(../assets/blog-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.blogBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.blogLeftSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 500px;
+    gap: 15px;
+}
+
+.blogLeftTopSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+    gap: 15px;
+}
+
+.blogMainH4 {
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+
+.blogLine {
+    height: 1px;
+    background-color: rgba(250, 250, 250, 0.5);
+    width: 35%;
+}
+
+
+.blogMainText {
+    color: white;
+    font-size: smaller;
+    padding: 0px, 30px;
+    margin: 0px 30px;
+    line-height: 22px;
+}
+
+.blogButtonsBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%; 
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.blogButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    
+}
+
+.blogTextButtons {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    font-size: small;
+    font-weight: 500;
+}
+
+.blogTextButtons:hover {
+    color: #f7c552;
+}
+
+.blogRightSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 15px;
+}
+
+.blogImg {
+ width: 100%;
+}
+
+.blogContent {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: white;
+    padding: 0px 20px 30px 20px;
+}
+
+.blogContentTitle {
+    color: black;
+    word-spacing: 1px;
+    margin-top: 25px;
+}
+
+.blogSpan {
+    margin: 5px 0px 15px 0px;
+}
+
+.blogSpanText {
+    text-decoration: none;
+    font-size: smaller;
+    font-weight: normal;
+    color: #33c1cf;
+}
+
+.blogContentParagraph {
+    font-size: small;
+    color: #7a7a7a;
+    line-height: 22px;
+}
+
+@media screen and (min-width: 768px) {
+    .blogBox {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .blogMainText {
+        margin: 0px 5%;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .blogBox {
+        margin-left: 0px;
+        margin-right: 0px;
+        flex-direction: row;
+    }
+
+    .blogLeftSection {
+        width: 50%;
+        margin-left: -100vh;
+        padding-left: 100vh;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .blogMainH4 {
+        text-align: left;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+    }
+
+    .blogLine {
+        align-self: flex-start;
+        margin-left: 12.5%;
+        width: 65%;
+    }
+
+    .blogMainText {
+        font-size: medium;
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+        margin: 0;
+    }
+
+    .blogLeftTopSection {
+        align-items: flex-start;
+        text-align: left;
+        overflow: hidden!important;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .blogLeftSection {
+        width: 60%;
+        margin-left: -100vh;
+        padding-left: 100vh;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .blogMainH4 {
+        text-align: left;
+        font-size: larger;
+        padding-left: 40%;
+        padding-right: 12.5%;
+    }
+
+    .blogLine {
+        align-self: flex-start;
+        margin-left: 40%;
+        width: 35%;
+    }
+
+    .blogMainText {
+        font-size: medium;
+        margin: 0px;
+        padding-left: 40%;
+        padding-right: 12.5%;
+    }
+
+    .blogButtonsBox {
+        width: 45%;
+        padding-left: 40%;
+        padding-right: 12.5%;
+    }
+
+    .blogRightSection {
+        margin: 0px 10% 50px 50px;
+    }
+
+
+}
+

@@ -1,0 +1,193 @@
+.footerBox {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: #373a3c;
+  padding: 50px 0px;
+  color: white;
+}
+
+.logoTitle {
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logoTitle em {
+  font-style: normal;
+  color: #f7c552;
+  font-size: 28px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.footerTinkerBox {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+  width: 90%;
+}
+
+.footerTinkerBox p {
+  font-size: xx-small;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.footerLocationBox {
+  padding: 30px 0px;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+  width: 90%;
+}
+
+.footerLocationTitle {
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+.locationsMainBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.locationsBox {
+  list-style-type: none;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.footerInfoBox {
+  padding: 30px 0px;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.1);
+  width: 90%;
+}
+
+.footerInfoTitle {
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+.infoMainBox {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.infoBox {
+  list-style-type: none;
+  letter-spacing: 1px;
+  line-height: 5px;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.infoBox em {
+  font-style: normal;
+}
+
+/* SocialList Pas touche */
+
+.footerSocialBox li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  list-style-type: none;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.footerSocialBox p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.footerSocialBox i {
+  color: #373a3c;
+}
+
+.footerSocialList {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 1000px) {
+  .footerBox {
+    flex-direction: row;
+  }
+
+  .footerTinkerBox {
+    text-align: left;
+    margin: 0px 0px 0px 50px;
+    border: unset;
+  }
+
+  .footerInfoBox {
+    border: unset;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+  }
+
+  .footerInfoTitle {
+    text-align: start;
+  }
+
+  .footerLocationBox {
+    border: unset;
+    width: 100%;
+    margin-right: 50px;
+  }
+
+  .footerLocationTitle {
+    text-align: start;
+  }
+
+  .locationsMainBox {
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .locationsMainBox :first-child {
+    padding-right: 10px;
+    border-right: 1px solid rgba(250, 250, 250, 0.1);
+  }
+
+  .locationsMainBox :nth-child(2) {
+    padding-left: 10px;
+  }
+  .footerSocialBox {
+    margin-right: 50px;
+    text-align: left;
+    padding: 30px 0px;
+  }
+
+  .footerSocialBox p{
+    margin: 0px 0px 20px;
+  }
+
+  .footerSocialList{
+    padding-bottom: 20px;
+  }
+}

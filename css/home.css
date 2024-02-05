@@ -1,0 +1,248 @@
+* {
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+/* Header Start */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    z-index: 10000;
+    transition: all 0.5s ease-in-out;
+    height: 80px;
+    background-color: transparent;
+    text-align: center;
+    line-height: 40px;
+}
+
+
+.navBar {
+    transition: background-color 0.5s ease, color 0.5s ease;
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+   width: 100%;
+    height: 50px;
+    padding: 20px;
+}
+
+.navBarTitle {
+    text-shadow: none;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    color: white;
+}
+
+.navBarTitle em {
+    font-style: normal;
+    color: #f7c552;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navBarTitle:not(em) {
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.navBarToggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f7c552;
+    border-radius: 4px;
+    border: none;
+    width: 44px;
+    height: 34px;
+    padding: 5px;
+}
+
+
+.w-6 {
+    color: white;
+    background-color: transparent;
+}
+
+.navBarChoices {
+    display: none;
+    list-style-type: none;
+}
+
+.navBurgerChoices {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    gap: 10px;
+    width: 100%;
+    list-style-type: none;
+    padding-top: 15px;
+}
+
+.scrollBurgerBox {
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    gap: 20px;
+    border-bottom: 1px solid lightgrey;
+    opacity: 0.;
+}
+.scrollBurgerLink {
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: small;
+}
+        
+.scrollLink {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.iconBar {
+    background-color: white;
+    width: 20px;
+    height: 2px;
+}
+
+.scrolled {
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    color: black;
+}
+
+.navBar.scrolled a {
+    background-color: transparent;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    color: black;
+}
+
+.navBarChoices .scrolled {
+    background-color: transparent;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    color: white;
+}
+
+/* Header End */
+
+.parallax .baner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.baner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-image: url(../assets/banner_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallax {
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.homeTextContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 185px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.h2EmText {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    color: #f89624 !important;
+}
+
+.h2SpanText {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    color: #33c1cf !important;
+}
+
+.homeTextContainer > h2 {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+}
+
+.homeTextContainer > p {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.homeScrollLink {
+    color: black;
+    text-decoration: none;
+    background-color: #fff;
+    width: 90px;
+    height: 20px;
+    font-size: 13px;
+    padding: 12px 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+@media screen and ( min-width: 768px ) {
+    .navBarToggle {
+        display: none;
+        transition-duration: 0.2s;
+    }
+    .navBarChoices {
+        display: flex;
+        gap: 50px;
+        font-size: small;
+        transition-duration: 0.2s;
+    }
+
+    .navBurgerChoices{
+        display: none;
+        width: unset;
+        transition-duration: 0.2s;
+    }
+    .scrollBurgerBox{
+        display: none;
+        transition-duration: 0.2s;
+    }
+}
+
+@media screen and ( min-width: 1200px ) {
+    
+}

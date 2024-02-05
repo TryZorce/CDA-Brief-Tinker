@@ -1,0 +1,119 @@
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h2 {
+  margin-top: 100px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+.portfolioGallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #33c1cf;
+  width: 100%;
+}
+
+.portfolioText {
+  height: 500px;
+  width: 80%;
+  color: white;
+  text-align: center;
+}
+
+.portfolioText H2{
+  text-transform: uppercase;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+
+.portfolioSelector {
+  margin-top: 30px;
+}
+
+.portfolioSelector p {
+  padding: 10px;
+  font-weight: 700;
+}
+
+.portfolioImageWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.portfolioImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolioImageWrapper img {
+  width: 70%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.portfolioSeparator {
+  width: 100%;
+  height: 1px;
+  background-color: rgba(250, 250, 250, 0.5);
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 800px) {
+  .portfolioImage {
+    width: 51%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .portfolioImage img {
+    margin-left: 20px;
+  }
+}
+
+
+@media screen and (min-width: 1000px) {
+  .portfolioGallery {
+    flex-direction: row;
+  }
+
+  .portfolioSeparator {
+    width: 80%;
+  }
+
+  .portfolioText {
+    width: 40%;
+    text-align: start;
+    margin-left: 40px;
+  }
+
+
+  .portfolioText > p {
+padding-right: 100px;
+  }
+
+  .portfolioSelector p{
+    padding-left:unset ;
+  }
+
+  .portfolioImageWrapper {
+    height: 100%;
+    margin: 0px;
+    align-items: unset;
+    width: 66%;
+    padding: 30px 0px 30px 0px;
+  }
+
+  .portfolioImageWrapper img {
+    margin: unset;
+  }
+}

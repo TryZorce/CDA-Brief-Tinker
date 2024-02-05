@@ -1,0 +1,17 @@
+@import url(home.css);
+@import url(aboutUs.css);
+@import url(portfolio.css);
+@import url(blog.css);
+@import url(contactUs.css);
+@import url(review.css);
+@import url(footer.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+button {
+    cursor: pointer;
+}

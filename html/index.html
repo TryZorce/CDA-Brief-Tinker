@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fb6495d315.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="navBar scrolled">
+        <a href="#" class="navBarTitle"><em>T</em>inker</a>
+        <nav>
+          <button
+            type="button"
+            id="navToggle"
+            class="navBarToggle"
+            data-toggle="collapse"
+            data-target="mainNav"
+            onclick="burgerOpenClose()"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 scrolledButton"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </nav>
+        <ul class="navBarChoices">
+          <li>
+            <a href="#home" class="scrollLink scrolled" data-id="topPage"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#aboutUs" class="scrollLink scrolled" data-id="aboutUs"
+              >About Us</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio" class="scrollLink scrolled" data-id="portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#blog" class="scrollLink scrolled" data-id="blog">Blog</a>
+          </li>
+          <li>
+            <a href="#contactUs" class="scrollLink scrolled" data-id="contactUs"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="navBurgerChoices open">
+        <ul>
+          <li class="scrollBurgerBox">
+            <a href="#home" class="scrollBurgerLink" data-id="topPage">Home</a>
+          </li>
+          <li class="scrollBurgerBox">
+            <a href="#aboutUs" class="scrollBurgerLink" data-id="aboutUs"
+              >About Us</a
+            >
+          </li>
+          <li class="scrollBurgerBox">
+            <a href="#portfolio" class="scrollBurgerLink" data-id="portfolio"
+              >Portfolio</a
+            >
+          </li>
+          <li class="scrollBurgerBox">
+            <a href="#blog" class="scrollBurgerLink" data-id="blog">Blog</a>
+          </li>
+          <li class="scrollBurgerBox">
+            <a href="#contactUs" class="scrollBurgerLink" data-id="contactUs"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div
+      class="parallax baner"
+      id="home"
+      style="background-position: center calc(50% + 0px)"
+    >
+      <div class="homeTextContainer">
+        <h2 id="home">
+          <em class="h2EmText">TINKER</em>
+          <span class="h2SpanText">HTML5</span>
+          Template
+        </h2>
+        <p>
+          Tinker is a responsive CSS template provided by templatemo site. This
+          design can be<br />applied for any kind of website. Please mention our
+          site to your colleagues. Thank you.
+        </p>
+        <div>
+          <a href="#" class="homeScrollLink" data-id="aboutUs">Let's start</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section aboutUs -->
+
+    <div class="aboutUs" id="aboutUs">
+      <div
+        class="aboutUsRow"
+        style="background-position: center calc(50% + 474px)"
+      >
+        <div class="item">
+          <div class="itemIcon">
+            <img src="../assets/service_icon_01.png" />
+          </div>
+          <p class="itemTitle">Smart Notifications</p>
+          <div class="itemSeparator"></div>
+          <p class="itemDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            atque itaque iure id, quos aliquid eos quas iste ratione sapiente.
+          </p>
+          <a href="" class="itemButton">Continue Reading</a>
+        </div>
+        <div class="item">
+          <div class="itemIcon">
+            <img src="../assets/service_icon_02.png" />
+          </div>
+          <p class="itemTitle">Smart Notifications</p>
+          <div class="itemSeparator"></div>
+          <p class="itemDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            atque itaque iure id, quos aliquid eos quas iste ratione sapiente.
+          </p>
+          <a href="" class="itemButton">Continue Reading</a>
+        </div>
+      </div>
+      <div class="aboutUsRow">
+        <div class="item">
+          <div class="itemIcon">
+            <img src="../assets/service_icon_03.png" />
+          </div>
+          <p class="itemTitle">Smart Notifications</p>
+          <div class="itemSeparator"></div>
+          <p class="itemDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            atque itaque iure id, quos aliquid eos quas iste ratione sapiente.
+          </p>
+          <a href="" class="itemButton">Continue Reading</a>
+        </div>
+        <div class="item">
+          <div class="itemIcon">
+            <img src="../assets/service_icon_04.png" />
+          </div>
+          <p class="itemTitle">Smart Notifications</p>
+          <div class="itemSeparator"></div>
+          <p class="itemDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            atque itaque iure id, quos aliquid eos quas iste ratione sapiente.
+          </p>
+          <a href="" class="itemButton">Continue Reading</a>
+        </div>
+      </div>
+      <div id="portfolio"></div>
+    </div>
+
+    <!-- Fin de section aboutUs -->
+
+    <!-- Debut de la section Porfolio -->
+
+    <div class="portfolio">
+      <div class="portfolioGallery">
+        <div class="portfolioText">
+          <h2>Our Gallery</h2>
+          <div class="portfolioSeparator"></div>
+          <p>
+            In malesuada placerat ligula et bibendum. Aenean eget urna enim. Sed
+            enim ante, bibendum nec dictum ac, gravida ac lectus.
+          </p>
+          <div class="portfolioSelector">
+            <p>Show all</p>
+            <p>Branding</p>
+            <p>Graphic</p>
+            <p>Nature</p>
+            <p>Animation</p>
+          </div>
+        </div>
+        <div class="portfolioImageWrapper">
+          <div class="portfolioImage">
+            <img
+              src="../assets/portfolio_big_item_01.jpg"
+              alt="Une tasse de café"
+            />
+            <img src="../assets/portfolio_big_item_02.jpg" alt="Un escalier" />
+          </div>
+          <div class="portfolioImage">
+            <img
+              src="../assets/portfolio_big_item_03.jpg"
+              alt="Des lunettes sur un ordinateur portable"
+            />
+            <img
+              src="../assets/portfolio_big_item_04.jpg"
+              alt="Deux petit déjeuner"
+            />
+          </div>
+          <div class="portfolioImage">
+            <img
+              src="../assets/portfolio_big_item_05.jpg"
+              alt="Un bol de fruit"
+            />
+            <img src="../assets/portfolio_big_item_06.jpg" alt="Une chaise" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="reviewsWrapper">
+      <div class="reviewsContainer">
+        <p>
+          “ Suspendisse magna mauris, convallis vel finibus eget, lobortis
+          dictum neque. Nam tincidunt metus nec eros dignissim consectetur. ”
+        </p>
+      </div>
+      <p>John Henry</p>
+      <p class="reviewJob">Art Director</p>
+      <div class="reviewsDots">
+        <span class="dots"></span>
+        <span class="dots active"></span>
+        <span class="dots"></span>
+        <span class="dots" id="blog"></span>
+      </div>
+    </div>
+    <!-- Fin de section Portfolio -->
+
+    <!-- Debut de la section Blog -->
+
+    <div
+      class="blogBackground"
+      style="background-position: center calc(50% + 0px)"
+    >
+      <div class="blogBox">
+        <div class="blogLeftSection">
+          <div class="blogLeftTopSection">
+            <h4 class="blogMainH4">Our Blog Posts</h4>
+            <div class="blogLine"></div>
+            <p class="blogMainText">
+              Nam vulputate elementum nulla, sit amet congue ipsum malesuada
+              pretium. Vivamus vel gravida quam.
+            </p>
+          </div>
+          <ul class="blogButtonsBox">
+            <li class="blogButtons">
+              <a href="#" class="blogTextButtons">Nulla Eget Convallis Augue</a>
+            </li>
+            <li class="blogButtons">
+              <a href="#" class="blogTextButtons">Quisque Ultricies Maximus</a>
+            </li>
+            <li class="blogButtons">
+              <a href="#" class="blogTextButtons">Sed Vel Elit Et Lorem</a>
+            </li>
+            <li class="blogButtons">
+              <a href="#" class="blogTextButtons">Vivamus Purus Neque</a>
+            </li>
+          </ul>
+        </div>
+        <div class="blogRightSection">
+          <img
+            src="/assets/blog_item_01.jpg"
+            class="blogImg"
+            alt="Image trop drôle xptdr ça ce fois ils ce marrent xDDD wlh j'en peut plus jsuis plié de rire tellement les deux sur la photo ils rigolent. J'arrive pas à faire cette function : functionmakeBurgerWithOnionsSlicedInThinSlicesSpreadWithKetchup(){letburger='Hamburger';letonions='Oignonstranchésenfineslamelles';burger+='avec'+onions;letketchup='Ketchup';burger+='etétaléavec'+ketchup;return burger;}console.log(makeBurgerWithOnionsSlicedInThinSlicesSpreadWithKetchup()); Ben elle marche ta fonction , il ce passe quoi ? et pourquoi tu veut faire une fonction pour faire des burgers ? j'ai pas compris le délire xDDDD C'est juste que j'ai faim du coup je fait une fonction pour me faire a manger, logique non ? Ben ouai logique"
+          />
+          <div class="blogContent">
+            <h4 class="blogContentTitle">Nulla eget convallis augue</h4>
+            <span class="blogSpan">
+              <a href="#" class="blogSpanText">Digital Marketing /</a>
+              <a href="#" class="blogSpanText">Honey /</a>
+              <a href="#" class="blogSpanText">21 September 2020</a>
+            </span>
+            <p class="blogContentParagraph">
+              Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum
+              lectus elementum, porta felis. Class aptent taciti sociosqu ad
+              litora torquent per conubia nostra, per inceptos himenaeos.
+            </p>
+            <div id="contactUs"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de la section blog -->
+    <!-- Debut de la section Contact Us -->
+    <div class="contactUsBox">
+      <h4 class="contactMainH4">Contact Us</h4>
+      <div class="contactLine"></div>
+      <p class="contactMainText">
+        Nunc posuere non quam at pharetra. Mauris tincidunt purus vel ultrices
+        malesuada. Integer euismod erat ut nulla ultrices, ut auctor eros
+        feugiat.
+      </p>
+      <div class="messageButton">
+        <h4>Send us a message</h4>
+      </div>
+    </div>
+    <!-- Fin de la section Contact Us -->
+    <!-- Debut de la map -->
+    <div class="mapResponsive">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202405.34241565317!2d126.97413929999999!3d37.56487609999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca2012d5c39cf%3A0x7e11eca1405bf29b!2zU8Opb3VsLCBDb3LDqWUgZHUgU3Vk!5e0!3m2!1sfr!2sfr!4v1706273150576!5m2!1sfr!2sfr"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <!-- Fin de la map -->
+    <!-- Debut du footer -->
+    <div class="footerBox">
+      <div class="footerTinkerBox">
+        <div class="footerLogo">
+          <a href="" class="logoTitle"><em>T</em>inker</a>
+        </div>
+        <p>
+          Copyright © 2020 Your Company<br />
+          Design: TemplateMo
+        </p>
+      </div>
+      <div class="footerLocationBox">
+        <h4 class="footerLocationTitle">Location</h4>
+        <ul class="locationsMainBox">
+          <li class="locationsBox">46 Raffles Ave,<br />Singapore 039803</li>
+          <li class="locationsBox">12 Republic Blvd,<br />Singapore 038975</li>
+        </ul>
+      </div>
+      <div class="footerInfoBox">
+        <h4 class="footerInfoTitle">More Info</h4>
+        <ul class="infoMainBox">
+          <li class="infoBox"><em>Phone</em>: 040-040-0440</li>
+          <li class="infoBox"><em>Email</em>: tk@company.co</li>
+        </ul>
+      </div>
+      <div class="footerSocialBox">
+        <p>GET SOCIAL WITH US</p>
+        <ul class="footerSocialList">
+          <li>
+            <a><i class="fa fa-twitter"></i></a>
+          </li>
+          <li>
+            <a><i class="fa-brands fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a><i class="fa-brands fa-google"></i></a>
+          </li>
+          <li>
+            <a><i class="fa-solid fa-rss"></i></a>
+          </li>
+          <li>
+            <a><i class="fa-solid fa-basketball"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Fin du footer -->
+    <script src="/js/burger.js"></script>
+    <script src="/js/portfolio.js"></script>
+  </body>
+</html>
